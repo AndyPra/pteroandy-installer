@@ -30,9 +30,9 @@ set -e
 
 export GITHUB_SOURCE="v0.12.2"
 export SCRIPT_RELEASE="v0.12.2"
-export GITHUB_BASE_URL="https://raw.githubusercontent.com/pterodactyl-installer/pterodactyl-installer"
+export GITHUB_BASE_URL="https://raw.githubusercontent.com/AndyPra/pteroandy-installer"
 
-LOG_PATH="/var/log/pterodactyl-installer.log"
+LOG_PATH="/var/log/pteroandy-installer.log"
 
 # check for curl
 if ! [ -x "$(command -v curl)" ]; then
@@ -48,7 +48,7 @@ curl -sSL -o /tmp/lib.sh "$GITHUB_BASE_URL"/"$GITHUB_SOURCE"/lib/lib.sh
 source /tmp/lib.sh
 
 execute() {
-  echo -e "\n\n* pterodactyl-installer $(date) \n\n" >>$LOG_PATH
+  echo -e "\n\n* pteroandy-installer $(date) \n\n" >>$LOG_PATH
 
   [[ "$1" == *"canary"* ]] && export GITHUB_SOURCE="master" && export SCRIPT_RELEASE="canary"
   update_lib_source
