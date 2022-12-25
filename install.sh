@@ -48,7 +48,7 @@ curl -sSL -o /tmp/lib.sh "$GITHUB_BASE_URL"/"$GITHUB_SOURCE"/lib/lib.sh
 source /tmp/lib.sh
 
 execute() {
-  echo -e "\n\n* pteroandy-installer $(date) \n\n" >>$LOG_PATH
+  echo -e "\n\n* pterodactyl-installer $(date) \n\n" >>$LOG_PATH
 
   [[ "$1" == *"canary"* ]] && export GITHUB_SOURCE="master" && export SCRIPT_RELEASE="canary"
   update_lib_source
