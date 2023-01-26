@@ -30,7 +30,7 @@ set -e
 
 export GITHUB_SOURCE="v0.12.2"
 export SCRIPT_RELEASE="v0.12.2"
-export GITHUB_BASE_URL="https://raw.githubusercontent.com/AndyPra/pteroandy-installer"
+export GITHUB_BASE_URL="https://raw.githubusercontent.com/AndyPra/pteroandy-installer/master/install.sh"
 
 LOG_PATH="/var/log/pteroandy-installer.log"
 
